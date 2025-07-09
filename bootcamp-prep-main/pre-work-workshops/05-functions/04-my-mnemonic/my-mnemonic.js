@@ -13,16 +13,16 @@ myMnemonic('We', 'Eat', 'Eggs'); // => WEE
 
 function myMnemonic(a,b,c,d){
     let z='';
-    if (a!== undefined){
+    if (a!== undefined && a!==''){
         z=z+a[0];
     }
-    if (b!== undefined){
+    if (b!== undefined && b!== ''){
         z=z+b[0];
     }
-     if (c!== undefined){
+     if (c!== undefined && c!== ''){
         z=z+c[0];
     }  
-         if (d!== undefined){
+         if (d!== undefined && d!== ''){
         z=z+d[0];
     }   
     return z;
