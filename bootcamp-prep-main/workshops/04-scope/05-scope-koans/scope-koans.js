@@ -60,7 +60,7 @@ function testFour(msg) {
   function innerFunc(msg) {
     msg = msg;
 
-    function doubleInner(ms) {
+    function doubleInner(sg) {
       testFourMessage = msg;
       return testFourMessage;
     }
