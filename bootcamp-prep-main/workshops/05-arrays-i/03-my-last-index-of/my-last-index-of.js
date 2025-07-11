@@ -20,7 +20,7 @@ myLastIndexOf(['Tiffany', 'Sunny', 'Yoona'], 'Jessica'); // => -1
 // ```
 
 // If startIdx is defined, `myLastIndexOf` should start looking for the seachValue
-// at that index, and then move toward the front of the array as it looks for the
+// at that index, and then move toward the front of the array as it looks for the 
 // value.
 
 // ```javascript
@@ -32,8 +32,20 @@ myLastIndexOf(['the', 'girls', 'bring', 'the', 'boys', 'out'], 'the', 2); // => 
 
 
 function myLastIndexOf(arr, searchValue, startIdx=arr.length -1){
-    debugger;
-    // let c=-1;
+    let c=-1;
+    for (let i = startIdx; i>=0; i--){
+        if(arr[i]===searchValue){
+            c=i;
+            break;
+        }
+    }
+    return c;
+}
+
+
+
+
+   // let c=-1;
     // if (startIdx === undefined){
     //     startIdx = 0;
     // }
@@ -50,12 +62,3 @@ function myLastIndexOf(arr, searchValue, startIdx=arr.length -1){
     //         c=i;
     //     }
     // }
-    let c=-1;
-    for (let i = startIdx; i>=0; i--){
-        if(arr[i]===searchValue){
-            c=i;
-            break;
-        }
-    }
-    return c;
-}
